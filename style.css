@@ -1,0 +1,395 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.moderustic-body {
+  background-color: teal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.Logo {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5%;
+  animation: revealTop 4s;
+}
+
+@keyframes revealTop {
+  0% {
+    transform: translateY(-200%) rotate(-360deg);
+  }
+
+  100% {
+    transform: translateY(0%) rotate(360deg);
+  }
+}
+
+.labelname {
+  font-size: 250%;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+  margin-top: 1.5%;
+}
+
+.nameInput {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400 !important;
+  color: black !important;
+  font-size: 125% !important;
+  border: 2px solid black !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  margin-top: 1.5%;
+  width: 50% !important;
+}
+
+.nameInput:hover {
+  background-color: #5F9EA0 !important;
+  box-shadow: 4px 4px 10px black;
+}
+
+.continueBtn {
+  width: 15%;
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  font-weight: 400 !important;
+  color: black !important;
+  font-size: 125% !important;
+  border: 2px solid black !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.continueBtn:hover {
+  background-color: #5F9EA0 !important;
+  box-shadow: 4px 4px 10px black;
+}
+
+.wave {
+  position: absolute;
+  top: 85%;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  background-image: url("./Images/wave.png");
+  background-size: 100vw 20vh;
+}
+
+.wave1 {
+  animation: animate 20s linear infinite;
+  z-index: 15;
+  opacity: 0.9;
+  animation-delay: 0s;
+}
+
+.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 10;
+  opacity: 0.7;
+  animation-delay: -5s;
+}
+
+.wave3 {
+  animation: animate 10s linear infinite;
+  z-index: 5;
+  opacity: 0.4;
+  animation-delay: -2s;
+}
+
+.wave4 {
+  animation: animate2 5s linear infinite;
+  z-index: 1;
+  opacity: 0.5;
+  animation-delay: -5s;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 100vw;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -100vw;
+  }
+}
+
+.homeScreen {
+  display: none;
+  animation: fade-in 1s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar-image {
+  margin: 10px 5px;
+  width: 250px;
+  height: 100px;
+}
+
+.nav-bar-img {
+  background-color: #5F9EA0;
+}
+
+.nameDisplay {
+  margin: 50px;
+  color: black;
+  font-size: 40px;
+  border-radius: 10px !important;
+  padding: 20px 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.welcomeMsg {
+  margin-left: 15%;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.welcomeMsg2 {
+  margin-top: 10px;
+  margin-left: 15%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  display: block !important;
+  margin-left: 15%;
+  text-align: center;
+  font-size: 50px;
+  animation: cowmove 1s infinite alternate;
+}
+
+@keyframes cowmove {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+.Balerina {
+  float: right;
+  display: block;
+  margin-left: 0%;
+  margin-right: 10%;
+}
+
+.Sections {
+  view-timeline-name: --revealing-image;
+  view-timeline-axis: block;
+  animation: linear reveal both;
+  animation-timeline: --revealing-image;
+  animation-range: entry 25% cover 50%;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.Question {
+  margin-top: 10%;
+  margin-bottom: 2.5%;
+  margin-left: 5%;
+  text-decoration: underline;
+}
+
+.JellyJel {
+  float: left;
+  transform: rotateY(180deg);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Answer {
+  margin-top: 3%;
+  text-align: justify;
+}
+
+.LongMouth {
+  float: right;
+  margin-left: 5%;
+
+}
+
+.footer {
+  margin-top: 10%;
+  height: 200px;
+  background-color: #5F9EA0;
+}
+
+.footer-image {
+  margin: 2.5%;
+  width: 250px;
+  height: 100px;
+}
+
+.rights {
+  margin-left: 3.5%;
+  margin-bottom: 5%;
+}
+
+.icons {
+  font-size: 50px;
+  float: right;
+  margin-top: 6%;
+  margin-right: 3%;
+  color: black;
+  text-decoration: none;
+}
+
+.email {
+  float: right;
+  margin-right: 3%;
+  margin-bottom: 5%;
+}
+
+.notice {
+  float: right;
+  font-size: 50%;
+  margin: 1%;
+}
+
+.Shipwreck {
+  float: right;
+  margin-left: 1% !important;
+}
+
+.bullets {
+  margin-bottom: 1%;
+}
+
+.Turtly {
+  float: left;
+  margin-top: 1%;
+  margin-right: 6%;
+}
+
+.JellyJel2 {
+  float: right;
+  margin-left: 2%;
+}
+
+.Wakashio {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin-top: 2%;
+  margin-right: 3%;
+  margin-bottom: 2%;
+  float: left;
+}
+
+.Heads {
+  text-decoration: underline;
+  margin-top: 8%;
+  margin-bottom: 2%;
+}
+
+.Wakashio-2 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  float: right;
+}
+
+.ssTayeb {
+  border: solid 3px black;
+  border-radius: 25px;
+  margin-left: 3%;
+  margin-bottom: 2%;
+  float: right;
+}
+
+.ssTayeb2 {
+  border: solid 3px black;
+  border-radius: 25px;
+  margin-top: 1%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  float: left;
+}
+
+.Headers{
+  text-align: center;
+  margin: 3%;
+}
+
+.card{
+  background-color: #5F9EA0 !important;
+  display: table;
+}
+
+.text{
+  font-weight: 500;
+}
+
+.about-imgs{
+  border-radius: 43% 57% 74% 26% / 30% 26% 74% 70% ;
+  border: solid 5px #5F9EA0;
+  margin-right: 5%;
+}
+
+.developer-card {
+  display: flex; 
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+
+.developer-card2 {
+  display: flex; 
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+
+.developer-card3 {
+  display: flex; 
+  
+  margin-bottom: 20px;
+}
+
+.about-imgs2{
+  border-radius: 43% 57% 74% 26% / 30% 26% 74% 70% ;
+  border: solid 5px #5F9EA0;
+  margin-left: 5%;
+  margin-right: 5%;
+}
